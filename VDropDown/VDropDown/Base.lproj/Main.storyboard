@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VDropDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPU-8z-yg0">
+                                <rect key="frame" x="117" y="61" width="141" height="45"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="67k-8K-Vyi"/>
+                                    <constraint firstAttribute="width" constant="141" id="CC4-SK-to6"/>
+                                </constraints>
+                                <state key="normal" title="DropDown 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DropDownAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ikX-ac-42w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fk-bT-uwk">
+                                <rect key="frame" x="0.0" y="602" width="375" height="45"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="wtN-Cs-iZm"/>
+                                </constraints>
+                                <state key="normal" title="DropDown 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Dropdown2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aib-zn-InN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Dropdown 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNf-Cv-qJ5">
+                                <rect key="frame" x="87.5" y="134" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qfn-Af-vZj"/>
+                                    <constraint firstAttribute="height" constant="50" id="rCw-Tl-mLs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="h7m-8K-t1N"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Dropdown 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qtr-jT-bP0">
+                                <rect key="frame" x="87" y="308.5" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3v6-yl-YAS"/>
+                                    <constraint firstAttribute="width" constant="200" id="FaB-Q5-o2h"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VZj-pT-TNf"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RNf-Cv-qJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4hQ-v1-pKU"/>
+                            <constraint firstItem="Qtr-jT-bP0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Zg-xi-Kqt"/>
+                            <constraint firstItem="1Fk-bT-uwk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9y-0e-K1p"/>
+                            <constraint firstAttribute="trailing" secondItem="1Fk-bT-uwk" secondAttribute="trailing" id="Vsq-9p-hga"/>
+                            <constraint firstItem="1Fk-bT-uwk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WED-oV-QqV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Fk-bT-uwk" secondAttribute="bottom" constant="20" id="aSW-jm-TVE"/>
+                            <constraint firstItem="Qtr-jT-bP0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aeS-fX-4qT"/>
+                            <constraint firstItem="RNf-Cv-qJ5" firstAttribute="top" secondItem="FPU-8z-yg0" secondAttribute="bottom" constant="28" id="fvg-tK-kbX"/>
+                            <constraint firstItem="FPU-8z-yg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="j1i-A3-3PB"/>
+                            <constraint firstItem="FPU-8z-yg0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yy6-Ta-emk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnDropDown" destination="FPU-8z-yg0" id="3bJ-kA-Bcy"/>
+                        <outlet property="btnDropDown2" destination="1Fk-bT-uwk" id="PlF-cc-7nM"/>
+                        <outlet property="txtField" destination="RNf-Cv-qJ5" id="fwr-u5-tHX"/>
+                        <outlet property="txtField2" destination="Qtr-jT-bP0" id="a3X-sH-xoe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
