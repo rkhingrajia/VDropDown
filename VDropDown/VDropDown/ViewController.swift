@@ -34,6 +34,7 @@ class ViewController: UIViewController,VDropDown,UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         if textField == txtField {
+            arr = ["one","two","three","four","five"]
             ShowDropDown(isMultipleSelectionAllow: false, vc: self, OnView: textField, ArrData: arr, ArrSelectedData: Array<String>())
             return false
         }else if textField == txtField2{
@@ -103,6 +104,7 @@ class ViewController: UIViewController,VDropDown,UITextFieldDelegate {
     }
     
     @IBAction func Dropdown2Action(_ sender: UIButton) {
+        arr = ["six","seven","eight","nine","ten"]
         ShowDropDown(isMultipleSelectionAllow: false, vc: self, OnView: sender, ArrData:arr,ArrSelectedData:Array<String>())
     }
 }

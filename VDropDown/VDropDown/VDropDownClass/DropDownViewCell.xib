@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,24 +24,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-Pi-wk6">
-                        <rect key="frame" x="5" y="0.0" width="310" height="43.5"/>
+                        <rect key="frame" x="5" y="0.0" width="292" height="44"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-F0-N3P">
+                        <rect key="frame" x="302" y="15" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="JnG-Bc-Ges"/>
+                            <constraint firstAttribute="width" constant="13" id="c12-iQ-j68"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
+                    <constraint firstItem="Bt6-F0-N3P" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1vk-ae-htu"/>
                     <constraint firstItem="wGI-Pi-wk6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="3GT-oM-jWj"/>
-                    <constraint firstAttribute="trailing" secondItem="wGI-Pi-wk6" secondAttribute="trailing" constant="5" id="J4s-yC-Pfm"/>
+                    <constraint firstItem="Bt6-F0-N3P" firstAttribute="leading" secondItem="wGI-Pi-wk6" secondAttribute="trailing" constant="5" id="89q-px-TyM"/>
                     <constraint firstAttribute="bottom" secondItem="wGI-Pi-wk6" secondAttribute="bottom" id="bJT-fs-h7z"/>
                     <constraint firstItem="wGI-Pi-wk6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sJR-lI-G8F"/>
+                    <constraint firstAttribute="trailing" secondItem="Bt6-F0-N3P" secondAttribute="trailing" constant="5" id="uxL-hY-654"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="imgTickMark" destination="Bt6-F0-N3P" id="olx-Qu-eRz"/>
                 <outlet property="lblTitle" destination="wGI-Pi-wk6" id="YXH-vi-Gg0"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="check.png" width="40" height="40"/>
+    </resources>
 </document>

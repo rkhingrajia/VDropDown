@@ -20,6 +20,7 @@
 		C9631ACF1F0BFD45002C87A5 /* DropDown_Checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9631AC31F0BED3D002C87A5 /* DropDown_Checked@2x.png */; };
 		C9631AD01F0BFD45002C87A5 /* DropDown_Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9631AC51F0BED3D002C87A5 /* DropDown_Done@2x.png */; };
 		C9631AD11F0BFD45002C87A5 /* DropDown_Unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9631AC81F0BED3D002C87A5 /* DropDown_Unchecked@2x.png */; };
+		C97878501F10B3D1003B872E /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = C978784F1F10B3D1003B872E /* check.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C9631AC61F0BED3D002C87A5 /* DropDownViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownViewCell.xib; sourceTree = "<group>"; };
 		C9631AC71F0BED3D002C87A5 /* DropDownViewCellMultiple.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownViewCellMultiple.xib; sourceTree = "<group>"; };
 		C9631AC81F0BED3D002C87A5 /* DropDown_Unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DropDown_Unchecked@2x.png"; sourceTree = "<group>"; };
+		C978784F1F10B3D1003B872E /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ../../../../../Desktop/check.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C9631AC31F0BED3D002C87A5 /* DropDown_Checked@2x.png */,
+				C978784F1F10B3D1003B872E /* check.png */,
 				C9631AC51F0BED3D002C87A5 /* DropDown_Done@2x.png */,
 				C9631AC81F0BED3D002C87A5 /* DropDown_Unchecked@2x.png */,
 				C9631AC41F0BED3D002C87A5 /* DropDownListView.xib */,
@@ -160,6 +163,7 @@
 				C9631ACC1F0BEE5D002C87A5 /* DropDownListView.xib in Resources */,
 				C9631ACD1F0BEE5D002C87A5 /* DropDownViewCell.xib in Resources */,
 				C9631ACE1F0BEE5D002C87A5 /* DropDownViewCellMultiple.xib in Resources */,
+				C97878501F10B3D1003B872E /* check.png in Resources */,
 				ADF4046F1F0BC33700C1FFD3 /* LaunchScreen.storyboard in Resources */,
 				ADF4046C1F0BC33700C1FFD3 /* Assets.xcassets in Resources */,
 				ADF4046A1F0BC33700C1FFD3 /* Main.storyboard in Resources */,

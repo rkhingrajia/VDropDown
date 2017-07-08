@@ -14,6 +14,7 @@ class VTableViewCell: UITableViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var btnMultipleSelection: UIButton!
     
+    @IBOutlet weak var imgTickMark: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

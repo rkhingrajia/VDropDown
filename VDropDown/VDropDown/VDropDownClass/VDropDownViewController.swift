@@ -38,7 +38,7 @@ class VDropDownViewController: UIViewController, UITableViewDelegate, UITableVie
     var selectedIndexArray = Array<String>()
     var selectedData = Array<String>()
     var openView: UIView!
-    
+    var userdefault = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -143,6 +143,16 @@ class VDropDownViewController: UIViewController, UITableViewDelegate, UITableVie
         if !isMultipleSelectionAllow {
             let tblCell = tableView.dequeueReusableCell(withIdentifier: VDropDownViewController.SingleCellID) as! VTableViewCell
             tblCell.lblTitle.text = mAryData[indexPath.row]
+            if userdefault.value(forKey: "SelectedSingle") != nil {
+                if mAryData[indexPath.row] == userdefault.value(forKey: "SelectedSingle") as! String
+                {
+                    tblCell.imgTickMark.isHidden = false
+                }else{
+                    tblCell.imgTickMark.isHidden = true
+                }
+            }else{
+                tblCell.imgTickMark.isHidden = true
+            }
             return tblCell
         }else{
             let tblCell = tableView.dequeueReusableCell(withIdentifier: VDropDownViewController.MultipleCellID) as! VTableViewCell
@@ -163,6 +173,7 @@ class VDropDownViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if !isMultipleSelectionAllow {
             let strSelectedItem = mAryData[indexPath.row]
+            userdefault.set(strSelectedItem, forKey: "SelectedSingle")
             self.delegate?.VDropDownDidSelect(tableView,View:openView, Index: indexPath, SelectedItem: strSelectedItem, MultipleSelectedItems:Array<String>(),isMulple:isMultipleSelectionAllow)
             HideDropDown()
         }else{
